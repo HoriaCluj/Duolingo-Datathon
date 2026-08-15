@@ -1,5 +1,4 @@
-## Duolingo Datathon - Predicting Users' Return Time Probability using
-#### Survival Analysis
+## Duolingo Datathon - Predicting User Return Time Probability using Survival Analysis
 
 This project aims to predict user retention on Duolingo by examining the
 factors influencing the delay of their return, using Survival Analysis
@@ -65,7 +64,7 @@ Model Fitting: A Cox Proportional Hazards (CoxPH) model from the
 lifelines library is fitted to the training data, using interval_hours
 as the duration and event as the event indicator.
 
-#### Model Evaluation
+### Model Evaluation
 Concordance Index (C-index): The model's discriminative
 power is evaluated using the C-index on both training and test sets. A
 C-index of 0.61 suggests reasonable discriminatory ability. Prediction
@@ -90,7 +89,7 @@ from their last session, along with their session_number. This
 classification aims to identify user groups with different retention
 behaviors:
 
-#### Findings
+### Findings
 New users: Users with 3 or fewer sessions. High momentum: Users with
 high history_ratio and high session_ratio. Fragile momentum: Users with
 high history_ratio but low session_ratio. At-risk: Users with low
@@ -99,7 +98,7 @@ history_ratio but high session_ratio. A pie chart visualizes the
 distribution of users across these risk categories, providing actionable
 insights for targeted interventions.
 
-#### Conclusion
+### Conclusion
 This project demonstrates how survival analysis can be
 effectively applied to predict user retention for Duolingo. By
 understanding both the behavioral and performance factors that influence
